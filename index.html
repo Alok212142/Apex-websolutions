@@ -1,52 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Apex Web Solutions</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apex Web Solutions | Professional Website Services</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: #0d1b2a;
+      color: #fff;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 80px 10%;
+      background: linear-gradient(to right, #1b263b, #415a77);
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .hero a {
+      background: #00b4d8;
+      color: #fff;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .hero a:hover {
+      background: #0096c7;
+    }
+
+    .services {
+      padding: 60px 10%;
+      background: #fff;
+      text-align: center;
+    }
+
+    .services h3 {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+
+    .service-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #f1f5f9;
+      padding: 25px;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .card h4 {
+      margin-bottom: 10px;
+      color: #0d1b2a;
+    }
+
+    .about {
+      padding: 60px 10%;
+      background: #e9ecef;
+      text-align: center;
+    }
+
+    .about h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 16px;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: #0d1b2a;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-  <h1>Apex Web Solutions</h1>
-  <p>Professional Website & Digital Services</p>
-</header>
+  <header>
+    <h1>Apex Web Solutions</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-<nav>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Contact</a>
-</nav>
+  <section class="hero">
+    <h2>We Build Powerful & Professional Websites</h2>
+    <p>Static Websites • Business Sites • Fast & Secure Solutions</p>
+    <a href="#">Get Started</a>
+  </section>
 
-<section id="about">
-  <h2>About Us</h2>
-  <p>
-    Apex Web Solutions is a professional web service company providing
-    modern, fast and responsive websites for businesses, startups and
-    government projects.
-  </p>
-</section>
+  <section class="services">
+    <h3>Our Services</h3>
+    <div class="service-box">
+      <div class="card">
+        <h4>Static Website</h4>
+        <p>Fast, secure and SEO-friendly static websites for businesses.</p>
+      </div>
+      <div class="card">
+        <h4>Business Website</h4>
+        <p>Professional design to grow your online presence.</p>
+      </div>
+      <div class="card">
+        <h4>Landing Pages</h4>
+        <p>High-conversion landing pages for ads & campaigns.</p>
+      </div>
+      <div class="card">
+        <h4>Website Redesign</h4>
+        <p>Modern UI/UX redesign for existing websites.</p>
+      </div>
+    </div>
+  </section>
 
-<section id="services">
-  <h2>Our Services</h2>
-  <ul>
-    <li>Static & Business Websites</li>
-    <li>Government / GEM Website Support</li>
-    <li>Website Redesign</li>
-    <li>Domain & Hosting Setup</li>
-  </ul>
-</section>
+  <section class="about">
+    <h3>About Apex Web Solutions</h3>
+    <p>
+      Apex Web Solutions is a professional web service company focused on
+      creating fast, responsive and business-ready static websites.
+      Our goal is to deliver clean design, reliable performance and
+      complete client satisfaction.
+    </p>
+  </section>
 
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>Email: info@apex-websolutions.com</p>
-  <p>Phone: +91-XXXXXXXXXX</p>
-</section>
-
-<footer>
-  <p>© 2026 Apex Web Solutions. All rights reserved.</p>
-</footer>
+  <footer>
+    © 2026 Apex Web Solutions. All Rights Reserved.
+  </footer>
 
 </body>
 </html>
